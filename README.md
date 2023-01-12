@@ -1,1 +1,6 @@
-# BIS15W2023_ijimenezledesma
+### Ingrid's Cool Repository 
+
+email: [ijimenezledesma\@ucdavis.edu](mailto:ijimenezledesma@ucdavis.edu){.email}
+
+\<3 \<3 \<3
+
