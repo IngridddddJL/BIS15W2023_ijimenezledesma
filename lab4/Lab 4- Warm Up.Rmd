@@ -1,0 +1,65 @@
+---
+title: "palmerpenguins"
+output: html_document
+date: "2023-01-19"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+library(palmerpenguins)
+```
+
+## Dimension of 'penguines'
+```{r}
+dim(penguins)
+```
+## Dim using glimpse
+```{r}
+glimpse(penguins)
+```
+
+# Names of 'penguines'
+```{r}
+names(penguins)
+```
+
+```{r}
+penguins_data <-data.frame(penguins)
+penguins_data
+```
+##individuals - have to use $ bc you have to tell R where to build the table from
+```{r}
+table(penguins$island)
+```
+
+## mean body mass- also how to remove the NA's
+```{r}
+mean(penguins$body_mass_g, na.rm=T)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
