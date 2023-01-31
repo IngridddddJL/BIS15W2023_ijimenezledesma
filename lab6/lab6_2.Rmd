@@ -33,23 +33,24 @@ As biologists, a good question that we may ask is how do the measured variables 
 ```{r}
 penguins %>% 
   group_by(island) %>% 
-  summarize(mean_body_mass=mean(body_mass_g, na.rm=T))
+  summarize(mean_body_mass = mean(body_mass_g))
 ```
 
 Why do we have NA here? Do all of these penguins lack data?
 ```{r}
 penguins %>% 
-  group_by()
-  
+  group_by(island) %>% 
+  summarize(mean_body_mass = mean(body_mass_g, na.rm = T))
 ```
 
 Well, that won't work so let's remove the NAs and recalculate.
 ```{r}
 penguins %>% 
-  filter(!is.na(body_mass_g)) %>% 
   group_by(island) %>% 
-  summarize(mean_body_mass=mean(body_mass_g),
-            sd_body_mass_g=sd(body_mass_g))
+  filter(!is.na(body_mass_g)) %>% 
+  summarize(mean_body_mass = mean(body_mass_g),
+            sd_body_mass = sd(body_mass_g))
+  
 ```
 
 What if we are interested in the number of observations (penguins) by species and island?
