@@ -1,6 +1,6 @@
 ---
 title: "Lab 6 Homework"
-author: "Joel Ledford"
+author: "Ingrid Jimenez Ledesma"
 date: "`r Sys.Date()`"
 output:
   html_document: 

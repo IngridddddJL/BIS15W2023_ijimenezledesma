@@ -1,6 +1,6 @@
 ---
 title: "Lab 6 Homework"
-author: "Joel Ledford"
+author: "Ingrid Jimenez Ledesma"
 date: "2023-01-31"
 output:
   html_document: 
